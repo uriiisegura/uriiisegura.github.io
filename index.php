@@ -7,6 +7,9 @@
 		<link rel="stylesheet" href="assets/style.css">
 	</head>
 	<body>
-    <h1>@uriiisegura</h1>
+    	<h1>@uriiisegura</h1>
+		<?php
+			echo "This is a test";
+		?>
 	</body>
 </html>
