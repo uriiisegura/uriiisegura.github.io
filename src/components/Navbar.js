@@ -74,7 +74,8 @@ class Navbar extends Component {
 			<header>
 				<div className="header-title-container">
 					<svg id="header-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="-1 -1 2 2">
-						<g transform="scale(0.9)" stroke-width="0.1" stroke="#fff" fill="none">
+						{/* TODO: icon */}
+						{/* <g transform="scale(0.9)" stroke-width="0.1" stroke="#fff" fill="none">
 							<polygon id="pentagon" points="0,-1 0.951056516295,-0.309016994375 0.587785252292,0.809016994375 -0.587785252292,0.809016994375, -0.951056516295,-0.309016994375" stroke-linejoin="round"></polygon>
 							<use xlinkHref="#pentagon" stroke-width="0.13"></use>
 							<g id="recursion1">
@@ -93,7 +94,7 @@ class Navbar extends Component {
 								<use xlinkHref="#recursion3" transform="rotate(-144) scale(0.27416407865)"></use>
 								<use xlinkHref="#recursion3" transform="rotate(-288) scale(0.075165942022)"></use>
 							</g>
-						</g>
+						</g> */}
 					</svg>
 					<Link id="header-title" className="unlink" to="/">
 						uriiisegura
@@ -101,7 +102,7 @@ class Navbar extends Component {
 					</Link>
 				</div>
 				<nav className="header-nav">
-					<Link className="header-nav-button unlink" to="/about">About</Link>
+					<Link className="header-nav-button unlink" to="/projects">Projects</Link>
 					<Link className="header-nav-button unlink" to="/projects">Projects</Link>
 				</nav>
 			</header>

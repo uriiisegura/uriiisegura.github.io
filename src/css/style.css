@@ -1,12 +1,30 @@
 :root {
 	/* colors */
-	--primary-color: #50bbdc;
+	--primary-color: #15a884;
+	--white-color: #f9f9f9;
+	--black-color: #080808;
 
 	/* variables */
 	--body-max-width: 760px;
 
 	/* text */
 	--body-font: 'Lora', serif;
+
+	/* animations */
+	--bezier: cubic-bezier(0.3333, 1, 0.6666, 1);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	color: var(--black-color);
+	background-color: var(--white-color);
+	font-family: var(--body-font);
+	font-size: 18px;
+	line-height: 1.6;
 }
 
 button {
@@ -20,6 +38,244 @@ button {
 
 /*
 ==================
+Keyframes
+==================
+*/
+
+@keyframes oriolSlide {
+	0% {
+		transform: translateX(500px);
+		opacity: 0
+	}
+
+	100% {
+		transform: translateX(0);
+		opacity: 1
+	}
+}
+
+@keyframes seguraSlide {
+	0% {
+		transform: translateX(50px);
+		opacity: 0
+	}
+
+	100% {
+		transform: translateX(0);
+		opacity: 1
+	}
+}
+
+@keyframes ninoSlide {
+	0% {
+		transform: translateX(-500px);
+		opacity: 0
+	}
+
+	100% {
+		transform: translateX(0);
+		opacity: 1
+	}
+}
+
+@keyframes buttonSlide {
+	0% {
+		transform: translateY(100px);
+		opacity: 0
+	}
+  
+	100% {
+		transform: translateX(0);
+		opacity: 1
+	}
+}
+
+/*
+==================
+Title
+==================
+*/
+
+#title-content {
+	position: relative;
+	text-align: center;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	background-color: var(--black-color);
+	color: var(--white-color);
+	user-select: none;
+}
+
+#svg-container {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 100vmax;
+
+	& svg path {
+		stroke: #222;
+	}
+}
+
+.center-vertical {
+	position: relative;
+	z-index: 1;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.title-oriol {
+	font-size: 60pt;
+	width: fit-content;
+	padding-right: 4em;
+	line-height: 1;
+	animation: 3s var(--bezier) 0s 1 oriolSlide;
+}
+
+.title-segura {
+	font-size: 35pt;
+	width: fit-content;
+	line-height: 2;
+	animation: 3s var(--bezier) 0s 1 seguraSlide;
+}
+
+.title-nino {
+	font-size: 60pt;
+	width: fit-content;
+	text-align: right;
+	padding-left: 4em;
+	line-height: 1;
+	animation: 3s var(--bezier) 0s 1 ninoSlide;
+}
+
+@media only screen and (max-width: 600px) {
+	.title-oriol,
+	.title-nino {
+		font-size: 40pt;
+		padding: 0;
+	}
+
+	.title-segura {
+		font-size: 25pt;
+		padding: 0;
+	}
+}
+
+.short-screen-title {
+	display: none;
+	font-size: 35pt;
+	text-align: center;
+}
+
+@media only screen and (max-height: 450px) {
+	.title-oriol,
+	.title-segura,
+	.title-nino {
+		display: none;
+	}
+
+	.short-screen-title {
+		display: block;
+	}
+}
+
+.buttons {
+	width: 100%;
+	max-width: 800px;
+	padding: 50px 30px 0;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-around;
+	gap: 30px 20px;
+	flex-wrap: wrap;
+	animation: 3s var(--bezier) 0s 1 buttonSlide;
+}
+
+.button {
+	position: relative;
+	font-size: 20pt;
+	padding: 10px 24px;
+	border-bottom: 4px solid var(--white-color);
+	transition: 0.3s var(--bezier) all;
+
+	&:hover {
+		transform: translateY(-3px);
+		background-color: var(--black-color);
+		color: var(--primary-color);
+		border-bottom: 4px solid var(--primary-color);
+
+		& .button-outline {
+			border: 4px solid var(--primary-color);
+		}
+	}
+}
+
+.button-outline {
+	border: 4px solid transparent;
+	position: absolute;
+	inset: -4px 0;
+	transition: 0.2s var(--bezier) all;
+}
+
+@media only screen and (max-width: 600px) {
+	.buttons {
+		padding-bottom: 60px;
+		gap: 30px 50px;
+	}
+
+	.button {
+		font-size: 20px;
+		padding: 10px 16px;
+		border-bottom: 3px solid var(--white-color);
+
+		&:hover {
+			border-bottom: 3px solid var(--primary-color);
+
+			& .button-outline {
+				border: 3px solid var(--primary-color);
+			}
+		}
+	}
+
+	.button-outline {
+		border: 3px solid transparent;
+		inset: -3px 0;
+	}
+}
+
+@media only screen and (max-height: 450px) {
+	.buttons {
+		padding-bottom: 60px;
+		padding-top: 20px;
+	}
+
+	.button {
+		font-size: 20px;
+		padding: 10px 16px;
+		border-bottom: 3px solid var(--white-color);
+
+		&:hover {
+			border-bottom: 3px solid var(--primary-color);
+
+			& .button-outline {
+				border: 3px solid var(--primary-color);
+			}
+		}
+	}
+
+	.button-outline {
+		border: 3px solid transparent;
+		inset: -3px 0;
+	}
+}
+
+/*
+==================
 Navbar
 ==================
 */
@@ -28,11 +284,12 @@ header {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	gap: 0 32px;
 	padding: 0 50px;
 	position: relative;
-	background-color: black;
-	color: white;
-	box-shadow: 0 0 10px black;
+	background-color: var(--black-color);
+	color: var(--white-color);
+	box-shadow: 0 0 10px var(--black-color);
 }
 
 .header-title-container {
@@ -40,7 +297,6 @@ header {
 	align-items: center;
 	justify-content: center;
 	gap: 16px;
-	font-family: var(--body-font);
 	font-size: 25px;
 	margin: 8px 0;
 }
@@ -57,7 +313,7 @@ header {
 #header-title-underline {
 	position: absolute;
 	left: 0;
-	bottom: 0;
+	bottom: 4px;
 	width: 124px;
 	height: 2px;
 }
@@ -66,7 +322,6 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	font-family: var(--body-font);
 	font-size: 16px;
 }
 
@@ -77,10 +332,18 @@ header {
 	align-items: center;
 	padding: 16px 20px;
 	height: 100%;
-	transition: 0.2s cubic-bezier(0.3333, 1, 0.6666, 1) color;
+	transition: 0.2s var(--bezier) color;
+
+	&:hover {
+		color: var(--primary-color);
+	}
 }
-.header-nav-button:hover {
-	color: var(--primary-color);
+
+@media only screen and (max-width: 600px) {
+	header {
+		padding: 0 20px;
+		justify-content: space-around;
+	}
 }
 
 /*
@@ -89,15 +352,15 @@ Main
 ==================
 */
 
-.main-content {
+#main-content {
 	width: 100%;
 	max-width: var(--body-max-width);
 	padding: 30px;
 	padding-bottom: 140px;
 	box-sizing: border-box;
 	margin: auto;
-	background-color: white;
-	font-family: var(--body-font);
-	font-size: 16px;
-	line-height: 1.6;
+
+	& a {
+		color: var(--primary-color);
+	}
 }
