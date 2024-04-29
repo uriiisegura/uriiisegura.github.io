@@ -76,7 +76,7 @@ class Title extends Component {
 					<div className="title-nino">Niño</div>
 					<div className="short-screen-title">Oriol Segura Niño</div>
 					<div className="buttons">
-						<TitleButton to="/projects" text="Projects" />
+						<TitleButton to="/sigac" text="SiGAC" />
 						<TitleButton to="/projects" text="Projects" />
 						<TitleButton to="#main-content" hash={true} text="About" />
 					</div>

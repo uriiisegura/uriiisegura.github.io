@@ -102,7 +102,7 @@ class Navbar extends Component {
 					</Link>
 				</div>
 				<nav className="header-nav">
-					<Link className="header-nav-button unlink" to="/projects">Projects</Link>
+					<Link className="header-nav-button unlink" to="/sigac">SiGAC</Link>
 					<Link className="header-nav-button unlink" to="/projects">Projects</Link>
 				</nav>
 			</header>
