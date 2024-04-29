@@ -4,9 +4,9 @@ import katex from "katex";
 class Home extends Component {
 	componentDidMount() {
 		katex.render(
-			"\\int_{a}^{b} x^2 dx",
+			"\\sum_{i=1}^{n} i = \\frac{n(n+1)}{2}",
 			document.getElementById("eq-1"),
-			{ throwOnError: false }
+			{ throwOnError: false, displayMode: true }
 		);
 	}
 	render() {
