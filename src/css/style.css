@@ -1,13 +1,103 @@
 :root {
-	--plantilla-designer-bar-height: 40px;
+	/* colors */
+	--primary-color: #50bbdc;
+
+	/* variables */
+	--body-max-width: 760px;
+
+	/* text */
+	--body-font: 'Lora', serif;
 }
 
 button {
 	cursor: pointer;
 }
 
+.unlink {
+	color: unset;
+	text-decoration: none;
+}
+
 /*
 ==================
-
+Navbar
 ==================
 */
+
+header {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 0 50px;
+	position: relative;
+	background-color: black;
+	color: white;
+	box-shadow: 0 0 10px black;
+}
+
+.header-title-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 16px;
+	font-family: var(--body-font);
+	font-size: 25px;
+	margin: 8px 0;
+}
+
+#header-icon {
+	width: 54px;
+	height: 54px;
+}
+
+#header-title {
+	position: relative;
+}
+
+#header-title-underline {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 124px;
+	height: 2px;
+}
+
+.header-nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	font-family: var(--body-font);
+	font-size: 16px;
+}
+
+.header-nav-button {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 16px 20px;
+	height: 100%;
+	transition: 0.2s cubic-bezier(0.3333, 1, 0.6666, 1) color;
+}
+.header-nav-button:hover {
+	color: var(--primary-color);
+}
+
+/*
+==================
+Main
+==================
+*/
+
+.main-content {
+	width: 100%;
+	max-width: var(--body-max-width);
+	padding: 30px;
+	padding-bottom: 140px;
+	box-sizing: border-box;
+	margin: auto;
+	background-color: white;
+	font-family: var(--body-font);
+	font-size: 16px;
+	line-height: 1.6;
+}
