@@ -114,8 +114,13 @@ Title
 	transform: translate(-50%, -50%);
 	width: 100vmax;
 
-	& svg path {
-		stroke: #222;
+	& svg {
+		overflow-clip-margin: content-box;
+		overflow: hidden;
+
+		& path {
+			stroke: #222;
+		}
 	}
 }
 
@@ -276,6 +281,18 @@ Title
 
 /*
 ==================
+Home
+==================
+*/
+
+.not-title {
+	background-color: var(--white-color);
+	position: relative;
+	z-index: 1;
+}
+
+/*
+==================
 Navbar
 ==================
 */
@@ -352,13 +369,17 @@ Main
 ==================
 */
 
-#main-content {
+.main-content {
 	width: 100%;
 	max-width: var(--body-max-width);
 	padding: 30px;
 	padding-bottom: 140px;
 	box-sizing: border-box;
 	margin: auto;
+
+	&:empty {
+		display: none;
+	}
 
 	& a {
 		color: var(--primary-color);

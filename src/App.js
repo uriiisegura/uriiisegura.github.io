@@ -14,12 +14,12 @@ function App() {
 	return (<>
 		<Router>
 			<Routes>
-				<Route path="/" element={<Title />} />
+				<Route path="/" element={<><Title /><Home /></>} />
 				<Route path="*" element={<Navbar />} />
 			</Routes>
-			<main id="main-content">
+			<main className="main-content">
 				<Routes>
-					<Route path="/" element={<Home />} />
+					<Route path="/" element={<></>} />
 					<Route path="/sigac" element={<SiGAC />} />
 					
 					<Route path="*" element={<NotFound />} />

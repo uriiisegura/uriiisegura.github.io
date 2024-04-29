@@ -3,12 +3,16 @@ import TitleButton from "../components/TitleButton";
 
 const ZOOM = 0.55;
 const NUMBER_OF_SIDES = 8;
-const NUMBER_OF_FIGURES = 71;
-const BASE_THICKNESS = 0.02;
+const NUMBER_OF_FIGURES = 121;
+const BASE_THICKNESS = 0.015;
+
+const TITLE_SCROLL_AMOUNT = 0.5;
 
 class Title extends Component {
 	componentDidMount() {
 		const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+		const titleContent = document.getElementById("title-content");
+
 		svg.setAttribute("viewBox", -ZOOM + ' ' + -ZOOM + ' ' + 2 * ZOOM + ' ' + 2 * ZOOM);
 
 		document.getElementById("svg-container").appendChild(svg);
@@ -64,6 +68,16 @@ class Title extends Component {
 
 		const startTime = performance.now();
 		loop();
+
+		function scrollCallback() {
+			if (window.scrollY < window.innerHeight) {
+				titleContent.style.transform = `translateY(${window.scrollY * TITLE_SCROLL_AMOUNT / 2}px)`;
+				svg.style.transform = `translateY(${window.scrollY * (1 - TITLE_SCROLL_AMOUNT) / 2}px)`;
+			}
+		}
+
+		window.addEventListener('scroll', scrollCallback);
+		scrollCallback();
 	}
 	render() {
 		return (<>
@@ -77,8 +91,8 @@ class Title extends Component {
 					<div className="short-screen-title">Oriol Segura Niño</div>
 					<div className="buttons">
 						<TitleButton to="/sigac" text="SiGAC" />
-						<TitleButton to="/projects" text="Projects" />
-						<TitleButton to="#main-content" hash={true} text="About" />
+						{/* <TitleButton to="/projects" text="Projects" /> */}
+						<TitleButton to="#about" hash={true} text="About" />
 					</div>
 				</div>
 			</div>
