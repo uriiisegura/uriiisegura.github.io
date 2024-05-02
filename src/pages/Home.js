@@ -5,7 +5,7 @@ class Home extends Component {
 		return (<>
 			<div className="not-title" id="about">
 				<div className="main-content">
-					<p>
+					{/* <p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 					</p>
 					<p>
@@ -17,7 +17,7 @@ class Home extends Component {
 					</p>
 					<p>
 						Donec euismod justo ut dictum mollis. Duis at justo nec leo euismod tempus. Cras eget hendrerit ligula. Morbi rhoncus risus id lectus porttitor aliquam. Sed lobortis, lectus et pulvinar tincidunt, magna massa euismod risus, a varius mi mi quis felis. Sed erat nisi, sodales vel augue at, luctus elementum erat. Sed ultrices sapien sed metus ullamcorper bibendum. Etiam tristique libero ex. Aliquam nisi justo, pulvinar vulputate lacus vel, tempus bibendum mauris. Suspendisse cursus turpis et velit volutpat, non venenatis nulla volutpat.
-					</p>
+					</p> */}
 					<h2>Contact</h2>
 					<p>
 						You can contact me at <a href="mailto:oriol.segura.nino@gmail.com">oriol.segura.nino@gmail.com</a>.

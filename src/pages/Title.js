@@ -92,7 +92,7 @@ class Title extends Component {
 					<div className="buttons">
 						<TitleButton to="/sigac" text="SiGAC" />
 						{/* <TitleButton to="/projects" text="Projects" /> */}
-						<TitleButton to="#about" hash={true} text="About" />
+						<TitleButton vh="100" text="About" />
 					</div>
 				</div>
 			</div>
