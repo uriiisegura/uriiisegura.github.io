@@ -75,6 +75,16 @@ class Navbar extends Component {
 				<div className="header-title-container">
 					<svg id="header-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="-1 -1 2 2">
 						{/* TODO: icon */}
+						<circle cx="0" cy="0" r="1" fill="#fff" />
+						<circle cx="0" cy="0" r="0.9" fill="#000" />
+						<circle cx="0" cy="0" r="0.8" fill="#fff" />
+						<circle cx="0" cy="0" r="0.7" fill="#000" />
+						<circle cx="0" cy="0" r="0.6" fill="#fff" />
+						<circle cx="0" cy="0" r="0.5" fill="#000" />
+						<circle cx="0" cy="0" r="0.4" fill="#fff" />
+						<circle cx="0" cy="0" r="0.3" fill="#000" />
+						<circle cx="0" cy="0" r="0.2" fill="#fff" />
+						<circle cx="0" cy="0" r="0.1" fill="#000" />
 						{/* <g transform="scale(0.9)" stroke-width="0.1" stroke="#fff" fill="none">
 							<polygon id="pentagon" points="0,-1 0.951056516295,-0.309016994375 0.587785252292,0.809016994375 -0.587785252292,0.809016994375, -0.951056516295,-0.309016994375" stroke-linejoin="round"></polygon>
 							<use xlinkHref="#pentagon" stroke-width="0.13"></use>
@@ -97,8 +107,8 @@ class Navbar extends Component {
 						</g> */}
 					</svg>
 					<Link id="header-title" className="unlink" to="/">
-						uriiisegura
-						<svg id="header-title-underline" stroke="white" stroke-width="10" viewBox="0 0 124 2"></svg>
+						Oriol Segura Niño
+						<svg id="header-title-underline"></svg>
 					</Link>
 				</div>
 				<nav className="header-nav">

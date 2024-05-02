@@ -3,6 +3,8 @@ import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import "./css/normalize.css";
 import "./css/style.css";
 
+import ScrollToTop from "./components/ScrollToTop";
+
 import Navbar from "./components/Navbar";
 import Title from "./pages/Title";
 import Home from "./pages/Home";
@@ -14,6 +16,7 @@ import GoTopButton from "./components/GoTopButton";
 function App() {
 	return (<>
 		<Router>
+			<ScrollToTop />
 			<Routes>
 				<Route path="/" element={<><Title /><Home /></>} />
 				<Route path="*" element={<Navbar />} />
