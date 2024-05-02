@@ -6,15 +6,16 @@ class GoTopButton extends Component {
 	}
 	checkVisibility() {
 		const goTopButton = document.getElementById("go-top-button");
-		goTopButton.style.display = window.scrollY > 250 ? "block" : "none";
+		goTopButton.style.display = window.scrollY > window.innerHeight * 0.4 ? "block" : "none";
 	}
 	componentDidMount() {
 		window.addEventListener("scroll", this.checkVisibility);
+		this.checkVisibility();
 	}
 	render() {
 		return (<>
 			<button id="go-top-button" onClick={this.goTop}>
-				<i className="fas fa-arrow-up">↑</i>
+				<span>↑</span>
 			</button>
 		</>);
 	}

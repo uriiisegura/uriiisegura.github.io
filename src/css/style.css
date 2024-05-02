@@ -305,18 +305,24 @@ Go To Top
 	right: 20px;
 	width: 50px;
 	height: 50px;
-	border-radius: 50%;
-	background-color: var(--primary-color);
-	color: var(--white-color);
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	box-shadow: 0 0 10px var(--black-color);
-	transition: 0.2s var(--bezier) background-color;
+	outline: none;
+	border: none;
+	background-color: var(--primary-color);
+	color: var(--white-color);
+	transition: 0.2s var(--bezier) opacity;
+	opacity: 0.8;
 	z-index: 1000;
 
+	& span {
+		font-size: 20pt;
+		line-height: 0.6;
+	}
+
 	&:hover {
-		background-color: #0d6e5c;
+		opacity: 1;
 	}
 }
 
