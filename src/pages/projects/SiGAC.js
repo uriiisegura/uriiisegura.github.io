@@ -42,7 +42,7 @@ class SiGAC extends Component {
 				</ul>
 
 				<p>
-					Agraiments:
+					Agraïments:
 				</p>
 
 				<ul>
