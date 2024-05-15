@@ -15,7 +15,7 @@ class GoTopButton extends Component {
 	render() {
 		return (<>
 			<button id="go-top-button" onClick={this.goTop}>
-				<span>⬆</span>
+				<img src="/svg/arrow-up.svg" alt="" />
 			</button>
 		</>);
 	}

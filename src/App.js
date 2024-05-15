@@ -8,6 +8,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/Navbar";
 import Title from "./pages/Title";
 import Home from "./pages/Home";
+import SiGACHeader from "./components/SiGACHeader";
 import SiGAC from "./pages/projects/SiGAC";
 import NotFound from "./pages/404";
 
@@ -19,13 +20,13 @@ function App() {
 			<ScrollToTop />
 			<Routes>
 				<Route path="/" element={<><Title /><Home /></>} />
+				<Route path="/sigac" element={<SiGACHeader />} />
 				<Route path="*" element={<Navbar />} />
 			</Routes>
 			<main className="main-content">
 				<Routes>
 					<Route path="/" element={<></>} />
 					<Route path="/sigac" element={<SiGAC />} />
-					
 					<Route path="*" element={<NotFound />} />
 				</Routes>
 			</main>

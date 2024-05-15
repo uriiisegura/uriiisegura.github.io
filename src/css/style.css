@@ -1,6 +1,7 @@
 :root {
 	/* colors */
 	--primary-color: #15a884;
+	--sigac-color: #ffa500;
 	--white-color: #f9f9f9;
 	--black-color: #080808;
 
@@ -29,6 +30,10 @@ body {
 
 button {
 	cursor: pointer;
+}
+
+ul {
+	margin-block-end: 1em;
 }
 
 .unlink {
@@ -310,20 +315,28 @@ Go To Top
 	justify-content: center;
 	align-items: center;
 	outline: none;
-	border: none;
+	border: 4px solid var(--black-color);
 	background-color: var(--black-color);
 	color: var(--white-color);
 	transition: 0.2s var(--bezier) background-color, color;
 	z-index: 1000;
 
-	& span {
-		font-size: 20pt;
+	& img {
+		position: absolute;
+		height: calc(100% - 10px);
+		top: 5px;
+		right: 5px;
+		bottom: 5px;
+		left: 5px;
+		filter: invert();
 	}
 
 	&:hover {
 		background-color: var(--white-color);
-		color: var(--black-color);
-		border: 4px solid var(--black-color);
+
+		& img {
+			filter: none;
+		}
 	}
 }
 
@@ -429,6 +442,14 @@ Main
 	}
 }
 
+@media only screen and (max-width: 800px) {
+	.main-content {
+		& h1, h2, h3, h4, h5, h6 {
+			margin-top: 0;
+		}
+	}
+}
+
 /*
 ==================
 Not Found
@@ -451,5 +472,28 @@ Not Found
 		font-size: 30pt;
 		line-height: 0;
 		margin: 0 !important;
+	}
+}
+
+/*
+==================
+SiGAC
+==================
+*/
+
+.sigac-header {
+	justify-content: space-around;
+}
+
+.sigac {
+	& a {
+		color: var(--sigac-color);
+	}
+
+	& hr {
+		border: 1px solid var(--sigac-color);
+		margin-block-start: 3em;
+		margin-block-end: 3em;
+		width: 35%;
 	}
 }
