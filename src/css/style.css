@@ -2,6 +2,7 @@
 	/* colors */
 	--primary-color: #15a884;
 	--sigac-color: #ffa500;
+	--gray-color: #545454;
 	--white-color: #f9f9f9;
 	--black-color: #080808;
 
@@ -39,6 +40,10 @@ ul {
 .unlink {
 	color: unset;
 	text-decoration: none;
+}
+
+.uncolor {
+	color: var(--gray-color) !important;
 }
 
 /*

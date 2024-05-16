@@ -10,6 +10,7 @@ import Title from "./pages/Title";
 import Home from "./pages/Home";
 import SiGACHeader from "./components/SiGACHeader";
 import SiGAC from "./pages/projects/SiGAC";
+import Projects from "./pages/Projects";
 import NotFound from "./pages/404";
 
 import GoTopButton from "./components/GoTopButton";
@@ -27,6 +28,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={<></>} />
 					<Route path="/sigac" element={<SiGAC />} />
+					<Route path="/projects" element={<Projects />} />
 					<Route path="*" element={<NotFound />} />
 				</Routes>
 			</main>

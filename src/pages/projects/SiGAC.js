@@ -30,7 +30,7 @@ class SiGAC extends Component {
 
 				<hr />
 
-				<h2>Membres</h2>
+				<h2>L'equip</h2>
 
 				<p>
 					Desenvolupament i disseny:
