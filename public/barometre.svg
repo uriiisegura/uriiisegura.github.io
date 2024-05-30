@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="150mm"
+   height="150mm"
+   viewBox="0 0 150 150"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   sodipodi:docname="favicon.svg"
+   inkscape:export-filename="..\..\..\..\..\..\Users\Oriol Segura\Desktop\favicon.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1"
+     inkscape:cx="265"
+     inkscape:cy="304"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-32.720337,-41.529659)">
+    <path
+       id="rect184"
+       style="fill:#e43800;fill-rule:evenodd;stroke-width:5.59741;paint-order:stroke fill markers;fill-opacity:1"
+       d="M 107.72041 41.529659 A 75 75 0 0 0 32.720337 116.52973 A 75 75 0 0 0 107.72041 191.52981 A 75 75 0 0 0 182.72048 116.52973 A 75 75 0 0 0 107.72041 41.529659 z " />
+    <circle
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:5;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="path3860-8"
+       cx="107.72034"
+       cy="112.82547"
+       r="40.70792" />
+    <circle
+       style="fill:#e43800;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:10;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="path3860"
+       cx="107.72034"
+       cy="68.473206"
+       r="12.930428" />
+    <circle
+       style="fill:#e43800;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:10;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="path3860-9"
+       cx="69.387672"
+       cy="143.77695"
+       r="12.930428" />
+    <circle
+       style="fill:#e43800;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:10;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="path3860-9-2"
+       cx="146.07729"
+       cy="143.77695"
+       r="12.930428" />
+  </g>
+</svg>

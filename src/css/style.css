@@ -483,11 +483,11 @@ Not Found
 
 /*
 ==================
-SiGAC
+Projects
 ==================
 */
 
-.sigac-header {
+.project-header {
 	justify-content: space-around;
 }
 
@@ -498,6 +498,19 @@ SiGAC
 
 	& hr {
 		border: 1px solid var(--sigac-color);
+		margin-block-start: 3em;
+		margin-block-end: 3em;
+		width: 35%;
+	}
+}
+
+.barometre {
+	& a {
+		color: var(--barometre-color);
+	}
+
+	& hr {
+		border: 1px solid var(--barometre-color);
 		margin-block-start: 3em;
 		margin-block-end: 3em;
 		width: 35%;

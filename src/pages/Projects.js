@@ -8,7 +8,6 @@ class Projects extends Component {
 
 			<ul>
 				<li><Link className="uncolor" to="/projects">Lorem ipsum dolor sit amet</Link> – May 16, 2024</li>
-				{/* TODO: BARÒMETRE UNIVERSITARI */}
 			</ul>
 		</>);
 	}

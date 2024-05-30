@@ -8,8 +8,9 @@ import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/Navbar";
 import Title from "./pages/Title";
 import Home from "./pages/Home";
-import SiGACHeader from "./components/SiGACHeader";
+import ProjectHeader from "./components/ProjectHeader";
 import SiGAC from "./pages/projects/SiGAC";
+import Barometre from "./pages/projects/Barometre";
 import Projects from "./pages/Projects";
 import NotFound from "./pages/404";
 
@@ -21,13 +22,15 @@ function App() {
 			<ScrollToTop />
 			<Routes>
 				<Route path="/" element={<><Title /><Home /></>} />
-				<Route path="/sigac" element={<SiGACHeader />} />
+				<Route path="/sigac" element={<ProjectHeader project="SiGAC" />} />
+				<Route path="/barometre" element={<ProjectHeader project="Baròmetre" />} />
 				<Route path="*" element={<Navbar />} />
 			</Routes>
 			<main className="main-content">
 				<Routes>
 					<Route path="/" element={<></>} />
 					<Route path="/sigac" element={<SiGAC />} />
+					<Route path="/barometre" element={<Barometre />} />
 					<Route path="/projects" element={<Projects />} />
 					<Route path="*" element={<NotFound />} />
 				</Routes>

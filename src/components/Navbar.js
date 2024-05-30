@@ -73,7 +73,7 @@ class Navbar extends Component {
 		return (<>
 			<header>
 				<div className="header-title-container">
-					<img id="header-icon" src="/sigac.svg" alt="Oriol Segura Niño" />
+					<img id="header-icon" src="/icon.svg" alt="Oriol Segura Niño" />
 					<Link id="header-title" className="unlink" to="/">
 						Oriol Segura Niño
 						<svg id="header-title-underline"></svg>
@@ -81,6 +81,7 @@ class Navbar extends Component {
 				</div>
 				<nav className="header-nav">
 					<Link className="header-nav-button unlink" to="/sigac">SiGAC</Link>
+					<Link className="header-nav-button unlink" to="/barometre">Baròmetre</Link>
 					<Link className="header-nav-button unlink" to="/projects">Projects</Link>
 				</nav>
 			</header>
