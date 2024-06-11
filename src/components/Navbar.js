@@ -81,7 +81,6 @@ class Navbar extends Component {
 				</div>
 				<nav className="header-nav">
 					<Link className="header-nav-button unlink" to="/sigac">SiGAC</Link>
-					<Link className="header-nav-button unlink" to="/barometre">Baròmetre</Link>
 					<Link className="header-nav-button unlink" to="/projects">Projects</Link>
 				</nav>
 			</header>

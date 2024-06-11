@@ -91,8 +91,7 @@ class Title extends Component {
 					<div className="short-screen-title">Oriol Segura Niño</div>
 					<div className="buttons">
 						<TitleButton to="/sigac" text="SiGAC" />
-						<TitleButton to="/barometre" text="Baròmetre" />
-						{/* <TitleButton to="/projects" text="Projects" /> */}
+						<TitleButton to="/projects" text="Projects" />
 						<TitleButton vh="100" text="About" />
 					</div>
 				</div>

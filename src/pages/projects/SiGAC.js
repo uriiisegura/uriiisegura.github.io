@@ -28,6 +28,14 @@ class SiGAC extends Component {
 					La clau per a fer un bon axiu és el model. Cal que sigui excel·lent, escalable, fàcil d'usar i el màxim eficient. Cal que estigui preparat per a nous castells, noves estructures i noves idees. Cal un sistema viu, que pugui créixer i adaptar-se.
 				</p>
 
+				<p>
+					És per això que des d'un inici va esdevenir el centre d'atenció del projecte. Quan li vaig proposar a l'Arnau d'ajudar-me jo ja tenia una idea de com havia de ser aquest model; com calia esperar, aquesta primera versió era molt millorable i va canviar molt amb el temps.
+				</p>
+
+				<p>
+					Vam estar tot l'abril i maig de 2024 treballant en aquest model, en aquesta ontologia. Vam fer diverses reunions, molts esborranys, i moltes proves. I finalment, a inicis de juny, vam arribar a un model que ens va semblar prou bo per a començar a treballar-hi.
+				</p>
+
 				<hr />
 
 				<h2>L'equip</h2>
@@ -37,7 +45,7 @@ class SiGAC extends Component {
 				</p>
 
 				<ul>
-					<li>Oriol Segura i Niño</li>
+					<li>Oriol Segura i Niño – <a href="https://twitter.com/uriiisegura" className="uncolor" target="_blank" rel="noreferrer">Twitter</a></li>
 					<li>Arnau Domènech i Bravin</li>
 				</ul>
 

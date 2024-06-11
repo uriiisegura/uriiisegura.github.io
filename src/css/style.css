@@ -1,8 +1,6 @@
 :root {
 	/* colors */
-	--primary-color: #15a884;
-	--sigac-color: #ffb733;
-	--barometre-color: #e43800;
+	--primary-color: #ffb733;
 	--gray-color: #545454;
 	--white-color: #f9f9f9;
 	--black-color: #080808;
@@ -45,6 +43,11 @@ ul {
 
 .uncolor {
 	color: var(--gray-color) !important;
+	text-decoration: underline !important;
+
+	&:hover {
+		color: var(--primary-color) !important;
+	}
 }
 
 /*
@@ -440,6 +443,11 @@ Main
 
 	& a {
 		color: var(--primary-color);
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 
 	& h1, h2, h3, h4, h5, h6 {
@@ -491,28 +499,9 @@ Projects
 	justify-content: space-around;
 }
 
-.sigac {
-	& a {
-		color: var(--sigac-color);
-	}
-
-	& hr {
-		border: 1px solid var(--sigac-color);
-		margin-block-start: 3em;
-		margin-block-end: 3em;
-		width: 35%;
-	}
-}
-
-.barometre {
-	& a {
-		color: var(--barometre-color);
-	}
-
-	& hr {
-		border: 1px solid var(--barometre-color);
-		margin-block-start: 3em;
-		margin-block-end: 3em;
-		width: 35%;
-	}
+hr {
+	border: 1px solid var(--sigac-color);
+	margin-block-start: 3em;
+	margin-block-end: 3em;
+	width: 35%;
 }
