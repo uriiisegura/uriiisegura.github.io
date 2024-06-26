@@ -33,7 +33,7 @@ class SiGAC extends Component {
 				</p>
 
 				<p>
-					Vam estar tot l'abril i maig de 2024 treballant en aquest model, en aquesta ontologia. Vam fer diverses reunions, molts esborranys, i moltes proves. I finalment, a inicis de juny, vam arribar a un model que ens va semblar prou bo per a començar a treballar-hi.
+					Vam estar tot l'abril i maig de 2024 treballant en aquest model, en aquesta ontologia. Vam fer diverses reunions, molts esborranys, i moltes proves. I finalment, a finals de juny, vam arribar a un model que ens va semblar prou bo per a començar a treballar-hi.
 				</p>
 
 				<hr />
